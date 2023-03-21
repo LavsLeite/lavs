@@ -1,0 +1,138 @@
+.formacao{
+    background: #FFEBF5;
+}
+.formacao-container{
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+}
+
+.formacao-container::after{
+    content: '';
+    display: block;
+    width: 130px;
+    height: 110px;
+    background: url(/img/detalhe.svg) no-repeat center;
+    position: absolute;
+    bottom: -55px;
+    left: -25px;
+}
+
+.formacao .subtitulo{
+    color:#FBDAEC ;
+    max-width: 5ch;
+}
+
+.formacao-texto{
+        font-size: 1.5rem;
+        line-height: 1.33;
+        max-width: 50ch;
+        margin-bottom: 60px;
+        color: #838383;
+    }
+
+    .formacao-texto strong{
+        color: #565656;
+    }
+
+    .amor-lista{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .amor{
+        flex:1;
+        background: #e5a0c6;
+        padding: 20px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .amor-grau{
+       font-size: .875rem;
+       text-transform: uppercase;
+       margin-bottom: 10px; 
+       color:#f2f2f2
+    }
+
+    .amor-descricao{
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 40px;
+        position: relative;
+        flex: 1;
+        color: #ffffff;
+    }
+
+    .amor-descricao::before{
+        content:'';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#FF5BD7, #A75FEF);
+    position: absolute;
+    left: -24px;
+    }
+
+    .extra{
+        margin-bottom: 60px;
+        margin-left: 10px;
+    }
+
+    .extra2{
+        margin-left: 10px;
+    }
+
+    .formacao-extra h3{
+        font-size: 0.875rem;
+        line-height: 1.4;
+        color:#838383 ;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .formacao-extra h3::before{
+        display: block;
+        content: '';
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: -25px;
+        
+    }
+
+    .extra h3::before{
+        background: url(/img/coraçao.svg) no-repeat center center;
+    }
+    .extra2 h3::before{
+        background: url(/img/joia.svg) no-repeat center center;
+    }
+
+    .formacao-extra li{
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+        color: #838383;
+    }
+
+    @media (max-width:800px){
+        .formacao-container{
+            grid-template-columns: 1fr;
+            padding: 60px 20px;
+            gap:40px;
+        }
+        .formacao .subtitulo{
+            color: #e5a0c6;
+        }
+        .formacao-texto{
+            font-size: 1.125rem;
+        }
+        
+    }
